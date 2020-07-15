@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SchemaVersion MajorVerNo="2" MinorVerNo="0"/>
+<SmartInfoBrowser>
+      <SmartInfoDetails>
+         <Title>BaroqueTemplate</Title>
+            <Title xml:lang="nld">BaroqueTemplate</Title>
+            <Title xml:lang="eng">BaroqueTemplate</Title>
+         <Icon>./shelve/page-2984-8.png</Icon>
+         <Description>Here you find the general information about all services that our hotel provides(Like breakfast timings, bike rental or about our airport shuttle service</Description>
+                <Description xml:lang="nld">Here you find the general information about all services that our hotel provides(Like breakfast timings, bike rental or about our airport shuttle service</Description>
+                <Description xml:lang="eng">Here you find the general information about all services that our hotel provides(Like breakfast timings, bike rental or about our airport shuttle service</Description>
+         <StartPageURL>./index.html</StartPageURL>
+            <StartPageURL xml:lang="nld">./index.html</StartPageURL>
+            <StartPageURL xml:lang="eng">./index.html</StartPageURL>
+      </SmartInfoDetails>
+      <Tiles>
+         <Tile>
+            <Icon>./shelve/page-2984-8.png</Icon>
+            <IconThumbnail>./shelve/page-2984-8.png</IconThumbnail>
+               <Label>Welcome</Label>
+               <Label xml:lang="nld">Welkom</Label>
+               <Label xml:lang="eng">Welcome</Label>
+            <Link>./index.html?page=2984</Link>
+               <Link xml:lang="nld">./index.html?page=2984&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=2984&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3002-2.png</Icon>
+            <IconThumbnail>./shelve/page-3002-2.png</IconThumbnail>
+               <Label>Watch</Label>
+               <Label xml:lang="nld">Bekijk</Label>
+               <Label xml:lang="eng">Watch</Label>
+            <Link>./index.html?page=3002</Link>
+               <Link xml:lang="nld">./index.html?page=3002&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3002&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3016-2.png</Icon>
+            <IconThumbnail>./shelve/page-3016-2.png</IconThumbnail>
+               <Label>Taste</Label>
+               <Label xml:lang="nld">Proef</Label>
+               <Label xml:lang="eng">Taste</Label>
+            <Link>./index.html?page=3016</Link>
+               <Link xml:lang="nld">./index.html?page=3016&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3016&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3034-2.png</Icon>
+            <IconThumbnail>./shelve/page-3034-2.png</IconThumbnail>
+               <Label>Connect</Label>
+               <Label xml:lang="nld">Verbind</Label>
+               <Label xml:lang="eng">Connect</Label>
+            <Link>./index.html?page=3034</Link>
+               <Link xml:lang="nld">./index.html?page=3034&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3034&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3050-2.png</Icon>
+            <IconThumbnail>./shelve/page-3050-2.png</IconThumbnail>
+               <Label>Share</Label>
+               <Label xml:lang="nld">Deel</Label>
+               <Label xml:lang="eng">Share</Label>
+            <Link>./index.html?page=3050</Link>
+               <Link xml:lang="nld">./index.html?page=3050&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3050&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3089-2.png</Icon>
+            <IconThumbnail>./shelve/page-3089-2.png</IconThumbnail>
+               <Label>Discover</Label>
+               <Label xml:lang="nld">Ontdek</Label>
+               <Label xml:lang="eng">Discover</Label>
+            <Link>./index.html?page=3089</Link>
+               <Link xml:lang="nld">./index.html?page=3089&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3089&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3103-2.png</Icon>
+            <IconThumbnail>./shelve/page-3103-2.png</IconThumbnail>
+               <Label>The Ball</Label>
+               <Label xml:lang="nld">Het Bal</Label>
+               <Label xml:lang="eng">The Ball</Label>
+            <Link>./index.html?page=3103</Link>
+               <Link xml:lang="nld">./index.html?page=3103&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3103&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3117-2.png</Icon>
+            <IconThumbnail>./shelve/page-3117-2.png</IconThumbnail>
+               <Label>Wedding</Label>
+               <Label xml:lang="nld">Bruiloft</Label>
+               <Label xml:lang="eng">Wedding</Label>
+            <Link>./index.html?page=3117</Link>
+               <Link xml:lang="nld">./index.html?page=3117&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3117&amp;lang=en</Link>
+         </Tile>
+         <Tile>
+            <Icon>./shelve/page-3131-2.png</Icon>
+            <IconThumbnail>./shelve/page-3131-2.png</IconThumbnail>
+               <Label>The Bar</Label>
+               <Label xml:lang="nld">De Bar</Label>
+               <Label xml:lang="eng">The Bar</Label>
+            <Link>./index.html?page=3131</Link>
+               <Link xml:lang="nld">./index.html?page=3131&amp;lang=nl</Link>
+               <Link xml:lang="eng">./index.html?page=3131&amp;lang=en</Link>
+         </Tile>
+      </Tiles>
+</SmartInfoBrowser>
