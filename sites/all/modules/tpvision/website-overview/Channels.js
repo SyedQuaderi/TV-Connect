@@ -54,6 +54,7 @@ var channelsitem = new function() {
             } else {
               objectActionKey.isKeyAction = "tuningchannelAndExit";            
               channel_selection();
+              leaveSmartInfo();
             };          
           }
           keyStatus = keyConsumed;
@@ -832,7 +833,7 @@ function changeApplication(app) {
   wixpcmd.Cookie = 299;
   wixpcmd.CmdType = wixp.CMD_TYPE_CHANGE;
   wixpcmd.Fun = wixp.FUN_APPLICATIONCONTROL;
-  if ( (app == "Miracast" || app == "Directshare") && (isOldPlatform == true) ) {
+  if ( (app == "Internet" || app == "Directshare") && (isOldPlatform == true) ) {
     wixpcmd.CommandDetails = {
       "ApplicationDetails": {
         "ApplicationName": 'Internet',
@@ -869,7 +870,7 @@ function leaveSmartInfo() {
     unGrabVirtualKeyForward();
   }*/
   setTimeout(function(){
-    switchToApplication("SmartInfo", "Deactivate");
+    switchToApplication("Internet", "Deactivate");
   }, 1000);
 
 };
@@ -1174,7 +1175,7 @@ callbackDispatcher = function(data) {
       if(responseDetails.ActiveApplications != undefined && isOldPlatform == false) { 
         var ActiveAppList = responseDetails.ActiveApplications;
         Debug("wixp.FUN_APPLICATIONCONTROL > " + ActiveAppList[0].ApplicationName);
-        if(ActiveAppList[0].ApplicationName == "SmartInfo"){         
+        if(ActiveAppList[0].ApplicationName == "Internet"){         
           ActiveApp = true;            
         /*  if(TVPlatform == "android"){
              setVirtualKeyForward();
