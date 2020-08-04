@@ -835,11 +835,9 @@ function changeApplication(app) {
   if ( (app == "Miracast" || app == "Directshare") && (isOldPlatform == true) ) {
     wixpcmd.CommandDetails = {
       "ApplicationDetails": {
-        "ApplicationName": app,
-        "ApplicationSubAction": {
-          "WiFiDirectAction": {
-            "Action": "StartBroadcastSSID"
-          }
+        "ApplicationName": 'Internet',
+        "ApplicationAttributes": {
+          "WebsiteURL": 'http://www.google.com'
         }
       },
       "ApplicationState": "Activate"
@@ -847,7 +845,10 @@ function changeApplication(app) {
   } else {
     wixpcmd.CommandDetails = {
       "ApplicationDetails": {
-        "ApplicationName": app
+        "ApplicationName": 'Internet',
+        "ApplicationAttributes": {
+          "WebsiteURL": 'http://www.google.com'
+        }
       },
       "ApplicationState": "Activate"
     };
