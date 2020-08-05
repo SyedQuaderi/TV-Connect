@@ -54,7 +54,6 @@ var channelsitem = new function() {
             } else {
               objectActionKey.isKeyAction = "tuningchannelAndExit";            
               channel_selection();
-              leaveSmartInfo();
             };          
           }
           keyStatus = keyConsumed;
@@ -833,12 +832,14 @@ function changeApplication(app) {
   wixpcmd.Cookie = 299;
   wixpcmd.CmdType = wixp.CMD_TYPE_CHANGE;
   wixpcmd.Fun = wixp.FUN_APPLICATIONCONTROL;
-  if ( (app == "Internet" || app == "Directshare") && (isOldPlatform == true) ) {
+  if ( (app == "Miracast" || app == "Directshare") && (isOldPlatform == true) ) {
     wixpcmd.CommandDetails = {
       "ApplicationDetails": {
-        "ApplicationName": 'Internet',
-        "ApplicationAttributes": {
-          "WebsiteURL": 'http://www.google.com'
+        "ApplicationName": app,
+        "ApplicationSubAction": {
+          "WiFiDirectAction": {
+            "Action": "StartBroadcastSSID"
+          }
         }
       },
       "ApplicationState": "Activate"
@@ -846,10 +847,7 @@ function changeApplication(app) {
   } else {
     wixpcmd.CommandDetails = {
       "ApplicationDetails": {
-        "ApplicationName": 'Internet',
-        "ApplicationAttributes": {
-          "WebsiteURL": 'http://www.google.com'
-        }
+        "ApplicationName": app
       },
       "ApplicationState": "Activate"
     };
@@ -870,7 +868,7 @@ function leaveSmartInfo() {
     unGrabVirtualKeyForward();
   }*/
   setTimeout(function(){
-    switchToApplication("Internet", "Deactivate");
+    switchToApplication("SmartInfo", "Deactivate");
   }, 1000);
 
 };
@@ -1175,7 +1173,7 @@ callbackDispatcher = function(data) {
       if(responseDetails.ActiveApplications != undefined && isOldPlatform == false) { 
         var ActiveAppList = responseDetails.ActiveApplications;
         Debug("wixp.FUN_APPLICATIONCONTROL > " + ActiveAppList[0].ApplicationName);
-        if(ActiveAppList[0].ApplicationName == "Internet"){         
+        if(ActiveAppList[0].ApplicationName == "SmartInfo"){         
           ActiveApp = true;            
         /*  if(TVPlatform == "android"){
              setVirtualKeyForward();
