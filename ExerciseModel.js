@@ -128,6 +128,7 @@ function getProfessionalSettings(){
 		"ProfessionalSettingsParameters" :
 			[
 		"SwitchOnSource",
+		"IdentificationSettings",
 		"TVModel",
 		"SerialNumber",
 		"RoomID",
